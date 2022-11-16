@@ -1,11 +1,14 @@
 import React from 'react';
-import Navigation from '../Components/Navigation';
+import Banniere from '../Components/Banniere';
+
 
 const Home = () => {
     return (
         <div className='home'>
-            <Navigation />
-            <h1 className='text-center'>Ici c'est l'accueil du site CICF</h1>
+           
+            { /** La bannière du site */ }
+            <Banniere />
+
         </div>
     );
 };

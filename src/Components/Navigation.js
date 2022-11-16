@@ -40,7 +40,7 @@ const Navigation = () => {
                         {/* Section du Logo */}
                         <div className="header__middle__logo">
                             <NavLink to="/">
-                                <img src="" className='logo' alt="logo__cicf" />
+                                <img src="" className='logo' width="80" alt="logo__cicf" />
                             </NavLink>
                         </div>
 
@@ -66,7 +66,7 @@ const Navigation = () => {
                                         </ul>
                                     </li>
                                     <li className="menu-item"> <NavLink onClick={toggleClass} to="/contact"> Contact </NavLink> </li>
-                                    <li className="menu-item"> <NavLink onClick={toggleClass} to="/contact"> A propos de Nous </NavLink> </li>
+                                    <li className="menu-item"> <NavLink onClick={toggleClass} to="/a-propos-de-nous"> A propos de Nous </NavLink> </li>
                                 </ul>
                             </nav>
                         </div>

@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@344&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+$font_content : 'Roboto', sans-serif;
+$font_title : 'Montserrat', sans-serif;
 
 // les couleures principales du site 
 
 $color1 : rgb(336,109,181);
+
+
+body {
+    font-family: $font_content;
+    a {
+        text-decoration: none;
+    }
+}
 

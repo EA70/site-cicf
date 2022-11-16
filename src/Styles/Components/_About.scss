@@ -1,0 +1,46 @@
+
+
+.about-us {
+
+    .header_about {
+        padding: 5%;
+        height: 35vh;
+        background: rgba(17, 9, 128, 0.712);
+
+        h3 {
+            text-transform: uppercase;
+            color:white;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+        // Responsive 
+
+        @media screen and (max-width:400px) {
+            .header_about {
+                padding: 20%;
+                height: 20vh;
+            }   
+        }
+    
+        @media screen and (max-width:972px) {
+            .header_about {
+                padding: 10%;
+                height: 25vh;
+            }   
+    
+        }
+}

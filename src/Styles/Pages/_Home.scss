@@ -1,0 +1,80 @@
+
+
+.home {
+    
+
+
+    // Section bannière 
+
+    .banniere {
+        padding-top: 37px;
+        
+        .banniere_contenu {
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(to right bottom,
+            rgba(210, 85, 235, 0.4),
+            rgba(15, 18, 19, 0.507)),
+            url("./../../../public/img/banniere.jpg");
+            background-size: cover;
+            background-position: top;
+            background-position: center;
+
+            .cicf {
+                font-weight: bolder;
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+                padding-top: 30px;
+                font-size: 3rem;
+                width: 500px;
+            }
+
+            .sous-cicf {
+                font-weight: bold;
+                color: white;
+            }
+
+            .banniere_btns {
+                width: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                a {
+                    color : white;
+                    border: 1px solid white;
+                    padding: 8px 13px;
+
+                    &:hover {
+                        color: rgb(255, 255, 255);
+                        background: rgba(17, 9, 128, 0.712);
+                        border: 1px solid rgba(17, 9, 128, 0.712);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    // Responsive 
+
+    // banniere
+
+    @media screen and (max-width:988px) {
+        .banniere {
+            padding-top: 5px;
+            .banniere_contenu {
+                background-position: right;
+                background-size: cover;
+
+                .cicf {
+                    font-size: 2rem;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
