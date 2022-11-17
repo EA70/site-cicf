@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import { SiFacebook, SiInstagram, SiLinkedin} from "react-icons/si";
+import { MdEmail, MdHome, MdPhone } from "react-icons/md";
 
 
 const Contact = () => {
@@ -160,17 +161,41 @@ const Contact = () => {
                     <h3 className="display-6 text-center fw-bold mt-5">Réserve ta place dès maintenant</h3>
                     <h1 className="display-2 text-center mb-5">Direction : Ta carrière professionnelle ! </h1>
 
-                    <div className="col-md-6">
-                        image ici
+                    <div className="col-md-5 mt-3">
+                        <img src="/../img/banniere.jpg" alt="" className='img-contact'/>
                     </div>
-                    <div className="col-md-6 mb-5">
-                        <h4>Centre de Mégrine</h4>
-                        <h1>Coordonnées</h1>
-                        <div className="coordone">
-                            <span>Mobile : 95 23 19 18</span>
-                            <span>Email : </span>
+                    <div className="col-md-2"></div>
+                    <div className="col-md-5 mb-5">
+                        <h4 className='fw-bold'>CICF Centre International Chebbi de Formation</h4>
+                        <h1 className='my-5' >Coordonnées</h1>
+                        <div className="details">
+                            <div className="detailItem">
+                                <span className="itemKey"> <MdPhone /> </span>
+                                <span className="itemValue">95 23 19 18</span>
+                            </div>
+                            <div className="detailItem">
+                                <span className="itemKey"> <MdEmail /> </span>
+                                <span className="itemValue">contact@cicf-formation.com</span>
+                            </div>
+                            <div className="detailItem">
+                                <span className="itemKey"> <MdHome /> </span>
+                                <span className="itemValue">37, Avenue TLILI - Cité Jawhara, Tunis</span>
+                            </div>
                         </div>
-                        <h1>Heure d'ouvertures</h1>
+
+                        <h1 className='my-5'>Heure d'ouvertures</h1>
+                        <h3>Pour les visiteurs</h3>
+                        <div className="details">
+                            <div className="detailItem">
+                                <span className="itemKey">Lundi à Vendredi : </span>
+                                <span className="itemValue">De 08h à 18h</span>
+                            </div>
+                            <div className="detailItem">
+                                <span className="itemKey">Samedi et dimanche</span>
+                                <span className="itemValue">Samedi et dimanche : fermé</span>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

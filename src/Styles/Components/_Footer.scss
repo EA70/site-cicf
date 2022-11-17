@@ -1,0 +1,78 @@
+
+
+.footer {
+    height: auto;
+    width: 100%;
+    background : rgba(17, 9, 128, 0.712);
+    color: white;
+
+    .btnLire {
+        text-transform: uppercase;
+        padding: 15px 0px;
+        border-top: 1px solid rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(255, 255, 255);
+        font-weight: bold;
+        color: rgb(12, 12, 12);
+    }
+
+    .social_networks {
+        a {
+            color:rgba(247, 247, 247, 0.712);
+            text-decoration: none;
+            padding: 10px;
+
+
+            svg {
+                font-size: 2rem;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .details {
+
+        .detailItem {
+            margin-bottom: 10px;
+            
+            .itemKey {
+                
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                margin-right: 10px;
+
+                svg {
+                    font-size: 1.5rem;
+                    color : rgba(255, 255, 255, 0.712);
+                }
+            }
+
+            .itemValue {
+                font-weight: 300;
+            }
+        }
+        
+    }
+
+    .copy {
+        background: black;
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            padding-top: 15px;
+            padding: 15px;
+
+        }
+    }
+
+
+
+    @media screen and (max-width:767px) {
+        .col-md-4 {
+            margin-top: 20px;
+        }
+    }
+}

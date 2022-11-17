@@ -13,8 +13,8 @@
             height: 100vh;
             width: 100%;
             background-image: linear-gradient(to right bottom,
-            rgba(210, 85, 235, 0.4),
-            rgba(15, 18, 19, 0.507)),
+            rgba(70, 72, 202, 0.4),
+            rgba(224, 213, 47, 0.507)),
             url("./../../../public/img/banniere.jpg");
             background-size: cover;
             background-position: top;
@@ -56,6 +56,44 @@
     }
 
 
+    .img-enseignant {
+        height: auto;
+        width: 100%;
+    }
+
+    .btn-pgrm {
+        text-transform: uppercase;
+        padding: 15px 0px;
+        border-top: 1px solid rebeccapurple;
+        border-bottom: 1px solid rebeccapurple;
+        font-weight: bold;
+        color: rgb(12, 12, 12);
+    }
+
+    .avantages {
+        position: relative;
+        padding: 20px;
+
+        .avantages-cicf {
+
+            .col-md-4 {
+                background-color: rgba(17, 9, 128, 0.712);
+                color: white;
+
+                p {
+                    border-left: 3px solid white;
+                    padding-left: 20px;
+                }
+            }
+
+            .a {
+                border-top-left-radius: 50px;
+            }
+            .c {
+                border-bottom-right-radius: 50px;
+            }
+        }
+    }
 
 
 

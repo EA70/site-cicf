@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import {FiAlignRight,FiXCircle } from "react-icons/fi";
+import logo from "./Logo.png";
 
 const Navigation = () => {
 
@@ -40,7 +41,7 @@ const Navigation = () => {
                         {/* Section du Logo */}
                         <div className="header__middle__logo">
                             <NavLink to="/">
-                                <img src="" className='logo' width="80" alt="logo__cicf" />
+                                <img src={logo} className='logo' width="80" alt="logo__cicf" />
                             </NavLink>
                         </div>
 
@@ -59,7 +60,7 @@ const Navigation = () => {
 
                                 <ul className={boxClass.join(' ')}>
                                     <li className="menu-item"> <NavLink onClick={toggleClass} to="/"> Accueil </NavLink> </li>
-                                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#" > Services</Link>
+                                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#" > Formations</Link>
                                         <ul className={boxClassSubMenu.join(' ')}>
                                             <li> <NavLink onClick={toggleClass} to="">Maintenance informatique</NavLink> </li>
                                             <li> <NavLink onClick={toggleClass} to="">Langues Francaise </NavLink> </li>
