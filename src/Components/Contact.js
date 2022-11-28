@@ -201,6 +201,15 @@ const Contact = () => {
                 </div>
             </div>
 
+            <div className="container-fluid mb-5">
+                <div className="row">
+                    <h4 className='display-6 text-center contact_title mb-5'>Trouvez-nous ! </h4>
+                    <div className="text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.6608291175885!2d10.228738714835337!3d36.77870327661003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd35f16c25ab89%3A0x73364ec6e9e7ea14!2sCentre%20international%20Chebbi%20de%20formation%20(CICF)!5e0!3m2!1sfr!2stn!4v1669644053198!5m2!1sfr!2stn" ></iframe>
+                    </div>
+                </div>
+            </div>
+
             <Footer />
         </div>
     );
