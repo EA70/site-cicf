@@ -1,22 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Reload from "../Reload";
+import Navigation from './Navigation';
+import Footer from './Footer';
 
 const Apropos = () => {
     return (
         <div className='about-us'>
+            <Navigation />
 
             <div className="container-fluid">
                 <div className="row">
-
                     <div className='header_about'>
-                        <h3>A propos de Nous</h3>
-                        <nav>
-                            <ol className="breadcrumb">
-                                <li className="breadcrumb-item"> <NavLink to="/" className="text-decoration-none text-white ">Home</NavLink> </li>
-                                <li className="breadcrumb-item active" aria-current="page" > A propos de nous </li>
-                            </ol>
-                        </nav>
+                        <h3>En savoir plus sur nous !</h3>
                     </div>
                 </div>
             </div>
@@ -27,7 +23,7 @@ const Apropos = () => {
                     <div className="col-md-6">
                         <h1 className="display-5 mb-5 fw-bold">Le Centre International Chebbi de Formation</h1>
                         <p>
-                            Le centre International Chebbi de Formation est un centre de formation professionnel dans divers dommaine. Le Centre met à disposition pour tous les niveaux une épuipe de professeurs expérimentés et qualifiés afin de satisfaire toutes vos demandes. 
+                            Le centre International Chebbi de Formation est un centre de formation professionnelle dans divers domaines. Le Centre met à votre disposition pour tous les niveaux une épuipe de professeurs expérimentés et bien qualifiés afin de satisfaire toutes vos demandes. 
                         </p>
 
                     </div>
@@ -135,7 +131,7 @@ const Apropos = () => {
                             Au CICF, le dicton "L'union fait la force" prend tout sons sens. Chaque membre de notre grande équipe travaille à ta réussite. Des enseignats qui te soutiennent dans tes apprentisssages au personnel administratif qui te guide, nous sommes là pour t'aider.
                         </p>
 
-                        <p>N'hésite pas à <NavLink onClick={Reload} to="/contact">nous contacter</NavLink> en cas de besoin, ou pour quoi ce soit; nous sommes là pour toi !</p>
+                        <p>N'hésitez pas à <NavLink onClick={Reload} to="/contact">nous contacter</NavLink> en cas de besoin, ou pour quoi que ce soit; nous sommes là pour votre service !</p>
                     </div>
                     <div className="col-md-2"></div>
                     <div className="col-md-5">
@@ -144,6 +140,7 @@ const Apropos = () => {
                 </div>
             </div>
 
+        <Footer />
         </div>
     );
 };

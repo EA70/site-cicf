@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import { SiFacebook, SiInstagram, SiLinkedin} from "react-icons/si";
 import { MdEmail, MdHome, MdPhone } from "react-icons/md";
+import Navigation from './Navigation';
+import Footer from './Footer';
 
 
 const Contact = () => {
@@ -39,7 +41,7 @@ const Contact = () => {
 
          if(inputEmail&&inputSociete&&inputName&&inputSujet&&message) {
 
-             emailjs.sendForm('service_hh485o3', 'template_fzqhsce', form.current, '222k-fNR9PUFFCLdx')
+             emailjs.sendForm('service_70mdp6f', 'template_6rbvi2p', form.current, 'user_dT1SfdJrjv1SloBulGu1A')
                  .then((result) => {
                      setShow(false);
                  }, (error) => {
@@ -48,7 +50,7 @@ const Contact = () => {
          }
 
         else {
-            throw new Error("tous les champs sont requis");
+            throw new Error("Tous les champs sont requis");
         }
 
        
@@ -59,17 +61,12 @@ const Contact = () => {
 
     return (
         <div className='contact'>
+            <Navigation />
 
             <div className="container-fluid">
                 <div className="row">
                     <div className='header_contact'>
-                        <h3>Contact</h3>
-                        <nav>
-                            <ol className="breadcrumb">
-                                <li className="breadcrumb-item"> <NavLink to="/" className="text-decoration-none text-white ">Home</NavLink> </li>
-                                <li className="breadcrumb-item active" aria-current="page" > Contact </li>
-                            </ol>
-                        </nav>
+                        <h3>Contactez-nous !</h3>
                     </div>
                 </div>
             </div>
@@ -77,12 +74,12 @@ const Contact = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-4  mt-5">
-                        <h4 className='display-6 contact_title'>Communique avec nous ! </h4>
+                        <h4 className='display-6 contact_title'>Communiquez avec nous ! </h4>
                         <p className='fw-bold my-4'>
-                            Nous sommmes le CENTRE INTERNATIONAL CHEBBI DE FORMATION "CICF", situé à Tunis, au 37 Avenue Ahmed TLLILI, Mégrine Jawhara, à coté du magasin à AZIZA.
+                            Nous sommmes le CENTRE INTERNATIONAL CHEBBI DE FORMATION "CICF", situé à Tunis, au 37 Avenue Ahmed TLLILI, Mégrine Jawhara 2033, à coté du magasin à AZIZA.
                         </p>
 
-                        <h4 className='display-6 contact_title'>Suis nous</h4>
+                        <h4 className='display-6 contact_title'>Suivez-nous</h4>
                         <div className="social_networks my-4">
                                 <NavLink to=""> <SiFacebook /> </NavLink>
                                 <NavLink to=""> <SiInstagram /> </NavLink>
@@ -152,7 +149,7 @@ const Contact = () => {
                             </div>
 
                  </form>
-                    : <div className='msgSuccess'>Merci de nous avoir contacté ! Nous reviendrons vers vous rapidement.</div> }
+                    : <div className='msgSuccess'>Merci de nous avoir contacté ! Nous vous répondrons dès que possible.</div> }
                     </div>
                 </div>
 
@@ -179,20 +176,24 @@ const Contact = () => {
                             </div>
                             <div className="detailItem">
                                 <span className="itemKey"> <MdHome /> </span>
-                                <span className="itemValue">37, Avenue TLILI - Cité Jawhara, Tunis</span>
+                                <span className="itemValue">37, Avenue Ahmed TLILI - Cité Jawhara, Mégrine 2033 , Tunis - Tunisie.</span>
                             </div>
                         </div>
 
-                        <h1 className='my-5'>Heure d'ouvertures</h1>
+                        <h1 className='my-5'>Les heures d'ouvertures</h1>
                         <h3>Pour les visiteurs</h3>
                         <div className="details">
                             <div className="detailItem">
                                 <span className="itemKey">Lundi à Vendredi : </span>
-                                <span className="itemValue">De 08h à 18h</span>
+                                <span className="itemValue">De 08h à 20h</span>
                             </div>
                             <div className="detailItem">
-                                <span className="itemKey">Samedi et dimanche</span>
-                                <span className="itemValue">Samedi et dimanche : fermé</span>
+                                <span className="itemKey">Samedi </span>
+                                <span className="itemValue">De 08 à 17h</span>
+                            </div>
+                            <div className="detailItem">
+                                <span className="itemKey">Dimanche </span>
+                                <span className="itemValue">De 08h30 à 14h</span>
                             </div>
 
                         </div>
@@ -200,7 +201,7 @@ const Contact = () => {
                 </div>
             </div>
 
-
+            <Footer />
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import {FiAlignRight,FiXCircle } from "react-icons/fi";
-import logo from "./Logo_cicf.png";
+import logo from "./logo-english-cicf.png";
 
 const Navigation = () => {
 
@@ -59,21 +59,15 @@ const Navigation = () => {
 
 
                                 <ul className={boxClass.join(' ')}>
-                                    <li className="menu-item"> <NavLink onClick={toggleClass} to="/"> Accueil </NavLink> </li>
-                                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#" > Formations</Link>
+                                    <li className="menu-item"> <NavLink onClick={toggleClass} to="/"> Home </NavLink> </li>
+                                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#" > Ours Trainings</Link>
                                         <ul className={boxClassSubMenu.join(' ')}>
-                                            <li> <NavLink onClick={toggleClass} to="/programmes/langues">En langues</NavLink> </li>
-                                            <li> <NavLink onClick={toggleClass} to="/programmes/informatiques">En Informatique </NavLink> </li>
-                                            <li> <NavLink onClick={toggleClass} to="/formation/comptabilite">En Comptabilité </NavLink> </li>
-                                            <li> <NavLink onClick={toggleClass} to="/formation/multimedia">En Multimédia et Infographie 3D </NavLink> </li>
-                                            <li> <NavLink onClick={toggleClass} to="/formation/marketing">En Marketing Digital </NavLink> </li>
-                                            <li> <NavLink onClick={toggleClass} to="/formation/coiffure">En coiffure, esthétique & Onglerie </NavLink> </li>
-                                            <li> <NavLink onClick={toggleClass} to="/formation/patisserie">En Patisserie </NavLink> </li>
+                                            <li> <NavLink onClick={toggleClass} to="">Maintenance informatique</NavLink> </li>
+                                            <li> <NavLink onClick={toggleClass} to="">Langues Francaise </NavLink> </li>
                                         </ul>
                                     </li>
-                                    <li className="menu-item"> <NavLink onClick={toggleClass} to="/clubs"> Nos clubs </NavLink> </li>
-                                    <li className="menu-item"> <NavLink onClick={toggleClass} to="/contact"> Contact </NavLink> </li>
-                                    <li className="menu-item"> <NavLink onClick={toggleClass} to="/a-propos-de-nous"> A propos de Nous </NavLink> </li>
+                                    <li className="menu-item"> <NavLink onClick={toggleClass} to="/contact"> Contact Us </NavLink> </li>
+                                    <li className="menu-item"> <NavLink onClick={toggleClass} to="/a-propos-de-nous"> About Us</NavLink> </li>
                                 </ul>
                             </nav>
                         </div>

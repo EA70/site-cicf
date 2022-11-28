@@ -4,15 +4,30 @@
 
     .header_about {
         padding: 5%;
-        height: 35vh;
-        background: rgba(17, 9, 128, 0.712);
+        height: 70vh;
+
+        background-image: linear-gradient(to right bottom,
+        rgba(15, 15, 15, 0.644),
+        rgba(20, 20, 20, 0.815)),
+        url("./../../../public/img/about.jpg");
+        background-size: cover;
+        background-position: top;
+        background-position: center;
+
+        position: relative;
 
         h3 {
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
             text-transform: uppercase;
             color:white;
             font-family: 'Montserrat', sans-serif;
             margin-bottom: 20px;
             font-weight: bold;
+            padding: 30px;
         }
     }
 
@@ -69,17 +84,17 @@
         // Responsive 
 
         @media screen and (max-width:400px) {
-            .header_about {
-                padding: 20%;
-                height: 20vh;
-            }   
+            // .header_about {
+            //     padding: 20%;
+            //     height: 20vh;
+            // }   
         }
     
         @media screen and (max-width:972px) {
-            .header_about {
-                padding: 10%;
-                height: 25vh;
-            }   
+            // .header_about {
+            //     padding: 10%;
+            //     height: 25vh;
+            // }   
     
         }
 }

@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="col-md-4">
                         <h5 className='mb-5'>A propos nous</h5>
                         <p className='aboutUsFooter mb-4'>
-                        Le centre International Chebbi de Formation est un centre de formation professionnel dans divers dommaine. Le Centre met à disposition pour tous les niveaux une épuipeé...
+                        Le centre International Chebbi de Formation est un centre de formation professionnelle dans divers dommaines. Le Centre met à votre disposition pour tous les niveaux une épuipe ...
                         </p>
                         <NavLink onClick={Reload}  className="btnLire text-white" to="/a-propos-de-nous">Lire la suite</NavLink>
                     </div>
@@ -37,11 +37,11 @@ const Footer = () => {
                             </div>
                             <div className="detailItem">
                                 <span className="itemKey"> <MdHome /> </span>
-                                <span className="itemValue">37, Avenue TLILI - Cité Jawhara, Tunis</span>
+                                <span className="itemValue">37, Avenue Ahmed TLILI - Cité Jawhara, Mégrine 2033, Tunis - Tunisie.</span>
                             </div>
                         </div>
 
-                        <h5 className='mt-5'>Suis-nous</h5>
+                        <h5 className='mt-5'>Suivez-nous</h5>
                         <div className="social_networks my-4">
                                 <NavLink to=""> <SiFacebook /> </NavLink>
                                 <NavLink to=""> <SiInstagram /> </NavLink>
